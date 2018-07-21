@@ -1,4 +1,4 @@
-from JSONTyper.serializables.serializable import Serializable
+from json_typer.serializables.serializable import Serializable
 
 
 class TypeSerializable(Serializable):

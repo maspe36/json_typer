@@ -2,7 +2,8 @@ from json_typer.serializables.serializable import Serializable
 
 
 class TypeSerializable(Serializable):
-    def __init__(self, type="", module=""):
+    # Eat the kwargs that aren't named arguments in constructors
+    def __init__(self, type="", module="", *args, **kwargs):
         super().__init__()
         self.type = type
         self.module = module

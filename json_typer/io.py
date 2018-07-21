@@ -34,7 +34,7 @@ def isDecodable(value):
 
 
 def createObject(JSON):
-    objectType = JSON["type"]
-    module = JSON["module"]
+    objectType = JSON[TYPE]
+    module = JSON[MODULE]
     importedModule = importlib.import_module(module)
     return getattr(importedModule, objectType)(**JSON)

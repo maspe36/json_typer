@@ -6,7 +6,7 @@ No fancy installation at the moment. Just include the root folder in any project
 
 ## Usage
 ### Making a class type serializable
-To make a class type serializable (a.k.a to seamlessly serialize the class to JSON and then when loading the JSON convert the object to its old type) inherit from ```python TypeSerializable``` and make sure you are passing ```python *args, **kwargs``` to the super constructor.
+To make a class type serializable (a.k.a to seamlessly serialize the class to JSON and then when loading the JSON convert the object to its old type) inherit from ```TypeSerializable``` and make sure you are passing ```*args, **kwargs``` to the super constructor.
 ```python
 from json-typer.serializables.type_serializable import TypeSerializable
 
@@ -56,7 +56,7 @@ isinstance(foo, Foo)
 ## Limitations
 - Currently restricted to Python 3
     - Issue for this [here](https://github.com/maspe36/json-typer/issues/1)
-- Must have ```python *args, **kwargs``` in the constructor and passed to the super call in any class that inherits from ```python TypeSerializable```
+- Must have ```*args, **kwargs``` in the constructor and passed to the super call in any class that inherits from ```TypeSerializable```
 
 ## Authors
 * **Sam Privett** - *Initial work* - [maspe36](https://github.com/maspe36)

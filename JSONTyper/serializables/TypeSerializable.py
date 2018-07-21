@@ -1,8 +1,8 @@
-from serializables.Serializable import Serializable
+from JSONTyper.serializables.Serializable import Serializable
 
 
 class TypeSerializable(Serializable):
-    def __init__(self, type="", module="", *args, **kwargs):
+    def __init__(self, type="", module=""):
         super().__init__()
         self.type = type
         self.module = module

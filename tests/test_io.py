@@ -19,16 +19,16 @@ class TestIO(unittest.TestCase):
 
         with open(FILE_PATH, "r") as new_file:
             text = new_file.read()
-            self.assertEquals(EXAMPLE_JSON, text)
+            self.assertEqual(EXAMPLE_JSON, text)
 
     def test_importing(self):
         JSONDict = json.loads(EXAMPLE_JSON)
         loadedHolder = io.dictToObjects(JSONDict)
 
-        self.assertEquals(loadedHolder, self.holder)
+        self.assertEqual(loadedHolder, self.holder)
 
     def test_serialization_and_importing(self):
         io.exportJSON(path=FILE_PATH, data=self.holder)
         loadedHolder = io.loadJSON(path=FILE_PATH)
 
-        self.assertEquals(loadedHolder, self.holder)
+        self.assertEqual(loadedHolder, self.holder)

@@ -27,7 +27,7 @@ io.exportJSON(path=EXAMPLE_FILE, data=foo)
 ```
 
 EXAMPLE_FILE contents
-```json
+```javascript
 {
     "type": "Foo"
     "module": "Foo"
@@ -56,7 +56,7 @@ isinstance(foo, Foo)
 ## Limitations
 - Currently restricted to Python 3
     - Issue for this [here](https://github.com/maspe36/json-typer/issues/1)
-- Must have *args, **kwargs in the constructor and passed to the super call in any class that inherits from TypeSerializable
+- Must have ```python*args, **kwargs``` in the constructor and passed to the super call in any class that inherits from ```pythonTypeSerializable```
 
 ## Authors
 * **Sam Privett** - *Initial work* - [maspe36](https://github.com/maspe36)

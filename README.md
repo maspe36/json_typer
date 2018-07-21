@@ -53,6 +53,9 @@ isinstance(foo, Foo)
 >>> True
 ```
 
+## Running Tests
+Open a terminal in this projects root directory and type ```python -m unittest```
+
 ## Limitations
 - Currently restricted to Python 3
     - Issue for this [here](https://github.com/maspe36/json-typer/issues/1)

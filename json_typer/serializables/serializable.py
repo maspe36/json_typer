@@ -15,9 +15,6 @@ class Serializable(dict):
                not callable(getattr(self, x)) # Don't return functions
         ]
 
-    def _getType(self):
-        return self.__class__.__name__
-
     def _repr(self, value):
         if isinstance(value, (str, int, float, list, tuple, dict)):
             return value

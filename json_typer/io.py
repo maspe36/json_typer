@@ -1,8 +1,8 @@
 import importlib
 import json
 
-TYPE = "type"
-MODULE = "module"
+TYPE = "_type"
+MODULE = "_module"
 
 
 def exportJSON(path, data):

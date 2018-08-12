@@ -1,4 +1,5 @@
 .idea/
-*.pyc
+_venv/
 
+*.pyc
 test.json

@@ -3,15 +3,15 @@
 
 class Serializable(dict):
     def __init__(self):
-        super().__init__()
+        super(Serializable, self).__init__()
         # hack to fix _json.so make_encoder serialize properly
         self.__setitem__('dummy', 1)
 
     def _myattrs(self):
         return [
             (x, self._repr(getattr(self, x)))
-            for x in self.__dir__()
-            if x not in Serializable().__dir__() and
+            for x in dir(self)
+            if x not in dir(Serializable()) and
                not callable(getattr(self, x)) # Don't return functions
         ]
 
@@ -20,6 +20,10 @@ class Serializable(dict):
             return value
         else:
             return repr(value)
+
+    def iteritems(self):
+        # Python 2 compatibility
+        return self.items()
 
     def __repr__(self):
         return '<%s.%s object at %s>' % (

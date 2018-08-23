@@ -19,7 +19,9 @@ class TestIO(unittest.TestCase):
 
         with open(FILE_PATH, "r") as new_file:
             text = new_file.read()
-            self.assertEqual(EXAMPLE_JSON, text)
+            loadedJSON = json.loads(text)
+            exampleJSON = json.loads(EXAMPLE_JSON)
+            self.assertEqual(exampleJSON, loadedJSON)
 
     def test_importing(self):
         JSONDict = json.loads(EXAMPLE_JSON)

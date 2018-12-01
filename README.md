@@ -57,8 +57,6 @@ isinstance(foo, Foo)
 Open a terminal in this projects root directory and type ```python -m unittest```
 
 ## Limitations
-- Currently restricted to Python 3
-    - Issue for this [here](https://github.com/maspe36/json-typer/issues/1)
 - Must have ```*args, **kwargs``` in the constructor and passed to the super call in any class that inherits from ```TypeSerializable```
 - A class that inherits from ```TypeSerializable``` cannot implement ```_type``` or ```_module``` attributes
 
@@ -66,4 +64,4 @@ Open a terminal in this projects root directory and type ```python -m unittest``
 * **Sam Privett** - *Initial work* - [maspe36](https://github.com/maspe36)
 
 ## License
-This project is licensed under the LGPL License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details

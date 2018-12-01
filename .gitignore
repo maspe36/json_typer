@@ -2,4 +2,5 @@
 _venv/
 
 *.pyc
-test.json
+
+tests/test.json

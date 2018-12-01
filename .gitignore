@@ -1,6 +1,7 @@
 .idea/
 _venv/
 dist/
+json_typer.egg-info/
 
 *.pyc
 

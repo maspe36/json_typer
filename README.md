@@ -2,7 +2,7 @@
 Seamlessly encode and decode python objects to json while maintaining their types.
 
 ## Installation
-No fancy installation at the moment. Just include the root folder in any project you're using.
+`pip install json_typer`
 
 ## Usage
 ### Making a class type serializable

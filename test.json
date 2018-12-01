@@ -1,0 +1,1 @@
+{"_module": "tests.test_classes.holder", "_type": "Holder", "objects": [{"_module": "tests.test_classes.foo", "_type": "Foo"}, {"_module": "tests.test_classes.bar", "_type": "Bar"}]}

@@ -1,4 +1,4 @@
-from json_typer.serializables.type_serializable import TypeSerializable
+from json_typer import TypeSerializable
 
 
 class Foo(TypeSerializable):

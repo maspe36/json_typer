@@ -1,4 +1,4 @@
-# json-typer
+# json_typer
 Seamlessly encode and decode python objects to json while maintaining their types.
 
 ## Installation
@@ -8,7 +8,7 @@ No fancy installation at the moment. Just include the root folder in any project
 ### Making a class type serializable
 To make a class type serializable (a.k.a to seamlessly serialize the class to JSON and then when loading the JSON convert the object to its old type) inherit from ```TypeSerializable``` and make sure you are passing ```*args, **kwargs``` to the super constructor.
 ```python
-from json-typer.serializables.type_serializable import TypeSerializable
+from json_typer.serializables.type_serializable import TypeSerializable
 
 
 class Foo(TypeSerializable):
@@ -19,7 +19,7 @@ class Foo(TypeSerializable):
 
 ### Exporting a type serializable class
 ```python
-from json-typer import io
+from json_typer import io
 
 foo = Foo(bar="example")
 
@@ -38,7 +38,7 @@ EXAMPLE_FILE contents
 
 ### Importing a JSON file
 ```python
-from json-typer import io
+from json_typer import io
 
 
 foo = io.loadJSON(path=EXAMPLE_FILE)
